@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing:border-box;
+	
+}
+
+body {
+	margin: 0;
+	background-image: url('../images/bacva1.jpg');
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-family: 'Work Sans', sans-serif;
+	height:100%;
+	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+	
+}
+
+@media (max-width: 500px)
+{
+	body
+	{
+		background-image: url('../images/pozmobbb.jpg');
+		background-size:auto;
+		background-repeat:repeat;
+		
+	}
+
+
+
+}
+
+/**** SLOGAN ****/
+
+.naslovna
+{
+	margin-right:auto;
+	margin-top:7rem;
+	margin-left:15%;
+	padding:20px;
+	font-size:25px;
+	text-align:left;
+	max-width:45%;
+	color: #dbd2ce;
+	font-style:italic;
+	background-color:rgba(15, 14, 13, 0.4);
+	border-radius:7px;
+	
+}
+
+.naslovna h3
+{
+	color:#F69900;
+	font-size:35px;
+	
+}
+
+
+
+h1
+{
+	font-size:62px;
+	text-align:center;
+	color:white;
+	font-style: italic;
+	text-decoration:none;
+	font-family: 'Gaegu', cursive;
+	text-shadow:0px 10px 16px;
+	
+	
+	
+}
+
+#slogan
+
+{
+	
+margin-top:17rem;
+margin-left:25rem;	
+
+}
+
+
+#linkslogan
+{
+	text-decoration: none;
+	color: #F69900;
+	font-family: 'Gaegu', cursive;
+	
+	
+}
+
+@media (max-width: 500px){
+	
+	.naslovna
+	{
+		font-size:22px;
+		max-width:80%;
+		margin-top:3rem;
+		padding-top:10px;
+	}
+	
+	
+	
+	h1{
+	 
+	  margin: 0 auto;
+	  padding:30px;
+	  max-width:100%;
+	  float:left;
+	}
+	#slogan
+	{
+		margin-top:0;
+		margin-left:auto;
+		padding:30px;
+		max-width:50%;
+		float:left;
+
+	}
+	
+  } 
+/**** SLOGAN ****/
+
+/***Sadrzaj***
+
+1. Navigacija
+2. Footer
+3. Forma
+4. Katalog
+5. Cjenik
+6. Kartice novih piva
+
+***Sadrzaj***/
+
+
+/*** NAVIGACIJA ***/
+.container {
+	width: 80%;
+	margin: 0 auto;
+	height: 100px;
+}
+
+header {
+  background: rgba(136 , 118 , 105, .5);
+ 
+}
+
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+.container img
+{
+	width:80px;
+	height:109px;
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 43px;
+
+  position: relative;
+}
+
+nav a {
+  color: #dbd2ce;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight:800;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #3E312A;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav > ul > a:active
+{
+	color:black;
+}
+
+@media (max-width: 500px)
+{
+	.logo
+	{
+		position:fixed;
+	}
+
+	nav ul 
+	{
+		
+		text-align:right;
+	}
+
+	header
+	{
+		height: 400px;
+	}
+
+}
+
+.vertikalna {
+	width: 100%;
+	margin: 0 auto;
+	height: 30px;
+}
+
+
+.vertikalna nav
+	{
+		display:flex;
+		flex-direction:row;
+	}
+
+.vertikalna	nav {
+		float: left;
+	  }
+	  
+.vertikalna  nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	  }
+	  
+.vertikalna nav li {
+		display: flex;
+		margin-left: 30px;
+		padding-top: 43px;
+	  
+		position: relative;
+	  }
+	  
+.vertikalna nav a {
+		color: #dbd2ce;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight:500;
+		font-style:italic;
+	  }
+
+.vertikalna nav a:hover {
+		color:  #BE9229;
+	  }
+.vertikalna nav a::before {
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: #BE9229;
+	  
+		position: absolute;
+		top: 0;
+		width: 0%;
+	  
+		transition: all ease-in-out 250ms;
+}	
+
+.vertikalna nav a:hover::before {
+	width: 100%;
+  }
+	  @media (max-width: 768px)
+	  {
+
+		.vertikalna
+		{
+			display:none;
+		}
+	  }
+
+	  @media (max-width: 500px)
+	  {
+
+		.vertikalna
+		{
+			display:none;
+		}
+
+
+	  }
+/******NAVIGACIJA******/	
+
+
+/***FOOTER***/
+
+
+footer
+{
+	
+	color:#dbd2ce;
+	margin-top: auto;
+	height: 1.875rem;
+	text-align:center;
+	padding: 3px;
+	font-size: 12px;
+}
+
+.kontaktfoot
+{
+	padding-top: 40px;
+	margin-top:auto;
+	height:140px;
+	background-color: rgba(85, 69, 62,0.5);
+}
+
+.kontaktfoot > a
+{
+	font-size: 35px;
+	padding: 18px;
+	color:white;
+	text-decoration: none;
+}
+
+
+/***FOOTER***/
+
+/****FORMA****/
+
+.wrapper
+{
+	
+	margin:auto;
+	margin-top:auto;
+	width: 96%;
+	height:20%;
+	padding: 0 20px;
+	
+}
+
+.kontaktforma
+{
+	max-width: 700px;
+	margin: auto;
+	background: rgba(136 , 118 , 105, .85);
+	padding:40px;
+	border-radius:5px;
+	display:flex;
+	box-shadow: 0 0 10px;
+}
+
+.inputpolja
+
+{
+	display:flex;
+	flex-direction:column;
+	margin-right:4%;
+	
+}
+
+.inputpolja ,
+.komentar
+{
+	width:70%;
+}
+
+.inputpolja .input,
+.komentar textarea
+{
+	margin:10px 0;
+	background:transparent;
+	border: 0;
+	border-bottom: 2px solid #312112;
+	padding:10px;
+	color:black;
+	width: 100%
+}
+
+.komentar textarea
+{
+	height:154px;
+}
+
+::-webkit-input-placeholder
+{ 
+	color:#312112;
+}
+
+
+.tipka
+{
+	background:rgb(76, 64, 57);
+	text-align:center;
+	padding:15px;
+	border-radius: 5px;
+	color:white;
+	font-weight:700;
+	transition:0.5s;
+}
+
+.tipka  > a:active
+
+{
+	text-decoration:none;
+	color:white;
+}
+
+.tipka > a:visited
+{
+	text-decoration:none;
+	color:white;
+}
+
+.tipka > a:link
+{
+	text-decoration:none;
+	color:white;
+}
+.tipka:hover
+{
+  box-shadow:0 0 7px 4px #BE9229;
+}
+
+@media (max-width: 500px)
+{
+	.kontaktforma
+	{
+		flex-direction:column;
+		
+	}
+	.wrapper
+	{
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+}
+/****FORMA****/
+
+/***NASLOV U FORMI***/
+h2
+
+{
+	margin:5px;
+	margin-right:40px;
+	padding:10px;
+	text-align:center;
+	font-style: italic;
+	
+	
+}
+
+.logoforma > img
+{
+	
+	display:flex;
+	flex-direction: column;
+	
+}
+/***NASLOV U FORMI***/
+
+/***KATALOG***/
+
+.grid {
+
+  margin-left: 3%;
+  margin-right: 3%;
+  
+  margin-top: 8%;
+  display: grid;
+  grid-template-columns: repeat(6, .4fr) ;
+  grid-gap: 2%;
+ 
+}
+
+  
+.grid > article {
+  border: 1px solid rgb(58, 41, 32);
+  box-shadow: 0 0 10px;
+  background-color:rgba(85, 69, 62,0.9);
+  border-radius: 3px;
+  text-align: center;
+  font-weight:600;
+  
+}
+
+.grid > article:hover{
+  transition: transform .2s ease-out;
+  transform: scale(1.02);
+}
+
+.grid > article img {
+  width: 100%;
+}
+
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.text > h3{
+  text-transform: uppercase;
+  font-size:30px;
+}
+
+.pale
+
+{ 
+	color:rgb(63, 21, 0);
+	font-family: 'Gaegu', cursive;
+	
+}
+
+.stout 
+{
+	font-family: 'Gaegu', cursive;
+}
+
+.pilsner
+  {
+	  font-family: 'Gaegu', cursive;
+	  color:#F69900;
+  }
+  
+  .ipa
+  {
+	  font-family: 'Gaegu', cursive;
+	  color:#a16530;
+  }
+  
+  .india
+  {
+	  font-family: 'Gaegu', cursive;
+	  color:#922A00;
+  }
+  
+  .porter
+  {
+	  font-family: 'Gaegu', cursive;
+	  color:#000506;
+  }
+
+
+@media (max-width: 1200px){
+	.grid{
+	  grid-template-columns: repeat(3, 1fr);
+	  margin: 0;
+	  padding-top:30px;
+	}
+  }
+  @media (max-width: 768px){
+	.grid{
+	  grid-template-columns: repeat(2, 1fr);
+	  margin: 0;
+	  padding-top:30px;
+	}
+  }
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+	margin: 5%;
+	padding-top:30px;
+	padding-bottom:300px;
+	
+  }
+  
+  .grid > article{
+    text-align: center;
+  }
+} 
+
+
+/*****KATALOG****/
+
+
+/****CJENIK****/
+
+
+
+
+table
+{
+	
+	background:#dbd2ce;
+	text-align:center;
+	border-collapse:collapse;
+	border-spacing:0;
+	width:60%;
+	height:200px;
+	border-radius: 12px 12px 0 0;
+	box-shadow: 0 2px 12px;
+	overflow:hidden;
+	margin-bottom:30px;
+
+}
+
+th
+{
+	background:#201817;
+	color:white;
+	text-transform:uppercase;
+
+}
+
+th , td
+{
+	padding: 10px 15px;
+	font-weight:600;
+}
+
+tr:nth-child(odd)
+{
+	background-color:#e0e0e0 ;
+}
+
+
+
+
+.sve
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin:auto;
+		
+}
+
+
+.slikacijena > img
+{
+	max-width:60%;
+	box-shadow: 0 0 10px;
+	border-radius:3px;
+	margin-top:10px;
+	
+}
+
+.sve > div
+{
+	flex-basis:40%;
+}
+
+.slika
+{
+	flex-basis:100%;
+}
+
+
+
+.tipka-cjenik
+  {
+	background:rgb(53, 45, 40);;
+	text-align:center;
+	padding:15px 15px;
+	border-radius: 5px;
+	color: #dbd2ce;
+	font-weight:900;
+	width:30%;
+	transition:0.5s;
+	
+  }
+
+  .tipka-cjenik > a:link
+  {
+	  font-weight:900;
+  }
+
+
+
+  .tipka-cjenik  > a:active
+
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+
+.tipka-cjenik > a:visited
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+
+.tipka-cjenik > a:link
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+
+.lista > p 
+{
+
+font-weight:bold;
+font-size:18px;
+color:#dbd2ce;
+font-style:italic;
+}
+.tipka-cjenik:hover
+{
+  box-shadow:0 0 7px 4px #BE9229;
+}
+
+
+@media (max-width: 500px){
+  .sve{
+	flex-direction: column;
+	margin: 0;
+	padding-top:30px;
+	padding-bottom:30px;
+	
+  }
+
+  .slikacijena > img
+  {
+	  margin:auto;
+	  max-width:100%;
+	  padding-bottom:30px;
+  }
+    
+  table
+  {
+	  width:100%;
+  }
+  .tipka-cjenik
+  {
+	  margin:auto;
+  }
+} 
+
+
+/***CJENIK***/
+
+/***KARTICE NOVIH PIVA***/
+.kartice 
+{
+	margin-left: 20%;
+	
+	
+	margin-right: 10%;
+  
+  margin-top: 3%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, .4fr) ;
+  grid-gap: 15%;
+}
+
+.kartice > article {
+	border: 1px solid rgb(58, 41, 32);
+	box-shadow: 0 0 10px;
+	background-color:rgba(85, 69, 62,0.9);
+	border-radius: 3px;
+	text-align: center;
+	font-weight:600;
+  }
+  
+  .kartice > article:hover{
+	transition: transform .2s ease-out;
+	transform: scale(1.02);
+  }
+  
+  .kartice > article img {
+	width: 100%;
+  }
+  
+  
+  .text-novapiva {
+	padding: 0 20px 20px;
+  }
+  
+  .text-novapiva > h3{
+	text-transform: uppercase;
+	font-size:30px;
+  }
+  
+  .pale-naslov
+  
+  { 
+	  color:rgb(63, 21, 0);
+	  font-family: 'Gaegu', cursive;
+	  
+  }
+  
+  .stout-naslov 
+  {
+	  font-family: 'Gaegu', cursive;
+  }
+  
+  
+
+  .tipka-kartice
+  {
+	background:rgb(53, 45, 40);;
+	text-align:center;
+	padding:0.9375rem;
+	border-radius: 5px;
+	color: #dbd2ce;
+	font-weight:900;
+	width:60%;
+	margin:auto;
+	transition:0.5s;
+	
+  }
+
+  .tipka-kartice > a:link
+  {
+	  font-weight:900;
+  }
+
+
+
+  .tipka-kartice  > a:active
+
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+
+.tipka-kartice > a:visited
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+
+.tipka-kartice > a:link
+{
+	text-decoration:none;
+	color: #dbd2ce;
+}
+.tipka-kartice:hover
+{
+  box-shadow:0 0 7px 4px #BE9229;
+}
+@media (max-width: 1300px){
+	.kartice{
+	  
+	 margin-bottom:20%;
+	  
+	}
+  }
+  @media (max-width: 768px){
+	  .kartice{
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+	  }
+	}
+  
+  @media (max-width: 500px){
+	.kartice{
+	  grid-template-columns: repeat(1, 1fr);
+	  margin: 5%;
+	  padding-top:30px;
+	  padding-bottom:180px;
+	}
+  
+	.kartice > article{
+	  text-align: center;
+	}
+  } 
+  
+  
+
+  /***KARTICE NOVIH PIVA***/
